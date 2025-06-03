@@ -8,10 +8,9 @@ body {
 }
 
 nav {
-    background: #46ffb8;
-    color: #070303;
-    padding: 10px 0;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  text-align: center;
 }
 
 nav ul {
