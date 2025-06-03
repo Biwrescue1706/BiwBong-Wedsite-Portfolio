@@ -10,7 +10,7 @@ body {
 /* ===== Navbar ===== */
 nav {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -34,19 +34,19 @@ nav ul li a {
   font-size: 1rem;
 }
 
-/* ===== Section ทั่วไป ===== */
+/* ===== Section ===== */
 section {
-  margin: 20px;
-  padding: 20px;
+  margin: 15px;
+  padding: 15px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  max-width: 700px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== About Section ===== */
+/* ===== About ===== */
 .about img {
   display: block;
   width: 150px;
@@ -58,14 +58,14 @@ section {
 
 .about h1 {
   text-align: center;
-  color: #007a5e;
+  color: #000000;
   margin-bottom: 20px;
   font-size: 2rem;
 }
 
 .about h2 {
   margin-top: 30px;
-  color: #007a5e;
+  color: #000000;
   font-size: 1.5rem;
 }
 
@@ -87,39 +87,58 @@ section {
   text-decoration: underline;
 }
 
-/* ===== Skill Bars ===== */
-.skills {
+/* ===== Skill Boxes (3 คอลัมน์) ===== */
+.skill-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+  gap: 30px;
   margin-top: 20px;
-  text-align: left;
+  margin-bottom: 20px;
 }
 
-.skill {
-  margin-bottom: 15px;
+/* Skill แต่ละแถว */
+.skill-row {
+  background: #ffffffcc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
-.skill label {
+/* ชื่อทักษะ */
+.skill-name {
   font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
+  font-size: 1.1rem;
   color: #333;
+  margin-bottom: 5px;
 }
 
-.bar {
-  background-color: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 25px;
+/* กราฟกล่อง */
+.skill-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 5px 0;
 }
 
-.value {
-  height: 100%;
-  background-color: #20c997;
-  text-align: right;
-  padding-right: 10px;
-  line-height: 25px;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px 0 0 10px;
+.box {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.box.filled {
+  background-color: #000000;
+}
+
+/* เปอร์เซ็นต์ */
+.percent {
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
 }
 
 /* ===== Footer ===== */
@@ -127,12 +146,16 @@ footer {
   text-align: center;
   padding: 10px 0;
   background: #46ffb8;
-  color: #000;
+  color: #000000;
   margin-top: 20px;
 }
 
-/* ===== Responsive Design (มือถือ) ===== */
-@media screen and (max-width: 600px) {
+/* ===== Responsive (มือถือ) ===== */
+@media screen and (max-width: 768px) {
+  .skill-boxes {
+    grid-template-columns: 1fr; /* เหลือ 1 คอลัมน์ในมือถือ */
+  }
+
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -157,5 +180,13 @@ footer {
 
   .about h2 {
     font-size: 1.2rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  .percent {
+    font-size: 1rem;
   }
 }
