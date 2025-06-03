@@ -37,23 +37,16 @@ nav ul li a {
 /* ===== Section ทั่วไป ===== */
 section {
   margin: 20px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* ===== About Section ===== */
-.about {
-  max-width: 700px;
-  margin: 30px auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== About Section ===== */
 .about img {
   display: block;
   width: 150px;
@@ -64,9 +57,16 @@ section {
 }
 
 .about h1 {
+  text-align: center;
   color: #007a5e;
   margin-bottom: 20px;
   font-size: 2rem;
+}
+
+.about h2 {
+  margin-top: 30px;
+  color: #007a5e;
+  font-size: 1.5rem;
 }
 
 .about p {
@@ -87,6 +87,41 @@ section {
   text-decoration: underline;
 }
 
+/* ===== Skill Bars ===== */
+.skills {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.bar {
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.value {
+  height: 100%;
+  background-color: #20c997;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
@@ -96,7 +131,7 @@ footer {
   margin-top: 20px;
 }
 
-/* ===== Responsive Design ===== */
+/* ===== Responsive Design (มือถือ) ===== */
 @media screen and (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -107,12 +142,20 @@ footer {
     margin: 10px 0;
   }
 
-  .about {
-    margin: 20px;
+  section {
+    margin: 15px;
     padding: 15px;
   }
 
   .about p {
     font-size: 0.95rem;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.2rem;
   }
 }
