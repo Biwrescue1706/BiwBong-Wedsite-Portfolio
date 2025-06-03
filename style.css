@@ -8,7 +8,7 @@ body {
 
 nav {
     background-color: rgba(12, 91, 40, 0.7);
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
     position: relative;
 }
@@ -39,13 +39,13 @@ nav ul li a {
     color: white;
     cursor: pointer;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 20px;
 }
 
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: block; /* โผล่บนจอเล็ก (มือถือ) */
     }
 
     #nav-list {
@@ -75,7 +75,7 @@ nav ul li a {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 }
 
