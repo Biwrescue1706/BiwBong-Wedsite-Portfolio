@@ -4,13 +4,11 @@ body {
     padding: 20px;
     font-family: 'Kanit', sans-serif;
     background: linear-gradient(to bottom, #b2f7b2, #20c997);
-    min-height: 100vh;
-
+    min-height: 150vh;
 }
 
 /* ===== ส่วนการศึกษา ===== */
 .edu-section {
-    padding: 10px 10px;
     max-width: 650px;
     margin: 15px;
     padding: 15px;
@@ -86,7 +84,7 @@ footer {
 
     .edu-card {
         flex-direction: row;
-        text-align: left;
+        text-align: center;
     }
 
     .edu-card img {
