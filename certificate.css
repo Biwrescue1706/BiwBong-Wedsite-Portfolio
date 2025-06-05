@@ -55,10 +55,9 @@ body {
 /* ===== รูปเรียงแนวตั้ง ===== */
 .certi-images {
     width: 150px;
-    height: 100px;
+    height: 210px;
     /* ✅ เพิ่มความสูง */
-    overflow-y: auto;
-    /* ✅ ถ้ามีรูปเกินก็ scroll */
+    overflow-y: 100px;
     display: flex;
     flex-direction: column;
     gap: 10px;
