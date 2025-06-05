@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 /* ===== Section ===== */
-section {
+.about {
   margin: 15px;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -90,7 +90,8 @@ section {
 /* ===== Skill Boxes (3 คอลัมน์) ===== */
 .skill-boxes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 คอลัมน์ */
   gap: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -121,7 +122,7 @@ section {
 /* กราฟกล่อง */
 .skill-bar {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   text-align: center;
   gap: 4px;
   margin: 20px 0;
@@ -160,7 +161,8 @@ footer {
 /* ===== Responsive (มือถือ) ===== */
 @media screen and (max-width: 650px) {
   .skill-boxes {
-    grid-template-columns: 1fr; /* เหลือ 1 คอลัมน์ในมือถือ */
+    grid-template-columns: 1fr;
+    /* เหลือ 1 คอลัมน์ในมือถือ */
   }
 
   nav ul {
@@ -173,8 +175,7 @@ footer {
   }
 
   section {
-    margin: 50px;
-    padding: 50px;
+    padding: 10px;
   }
 
   .about p {
