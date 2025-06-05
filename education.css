@@ -7,6 +7,17 @@ body {
   min-height: 200vh;
 }
 
+/* ===== เมนูนำทาง (Responsive toggle ควรอยู่ใน script.js) ===== */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
 /* ===== ส่วนการศึกษา ===== */
 .edu-section {
   margin: 15px;
