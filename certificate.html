@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="certificate.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - เกียรติบัตร</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="certificate.css" />
 </head>
 
 <body>
 
-    <nav>
+  <nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul id="nav-list">
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="education.html">การศึกษา</a></li>
+      <li><a href="certificate.html">เกียรติบัตร</a></li>
+      <li><a href="hobbies.html">กิจกรรมยามว่าง</a></li>
+      <li><a href="portfolio.html">ผลงาน</a></li>
+      <li><a href="contact.html">ติดต่อฉัน</a></li>
+      <li><a href="action.html">ดาวน์โหลด</a></li>
+    </ul>
+  </nav>
 
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <section class="certi-section">
+    <h1>เกียรติบัตร</h1>
 
-        <ul id="nav-list">
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="education.html">การศึกษา</a></li>
-            <li><a href="certificate.html">เกียรติบัตร</a></li>
-            <li><a href="hobbies.html">กิจกรรมยามว่าง</a></li>
-            <li><a href="portfolio.html">ผลงาน</a></li>
-            <li><a href="contact.html">ติดต่อฉัน</a></li>
-            <li><a href="action.html">ดาวน์โหลด</a></li>
-        </ul>
+    <!-- การ์ดมีหลายรูป -->
+    <div class="certi-card">
+      <div class="certi-images">
+        <img src="images/certificate/BSJ2.1.png" alt="สอบธรรมศึกษา 1" />
+        <img src="images/certificate/BSJ2.2.png" alt="สอบธรรมศึกษา 2" />
+      </div>
+      <div class="certi-text">
+        <p><strong>ปีการศึกษา:</strong> พ.ศ.2558</p>
+        <p><strong>ชื่อเกียรติบัตร:</strong> สอบธรรมศึกษาชั้นตรี   </p>
+        <p><strong>วันที่:</strong> 30 มิถุนายน 2558</p>
+      </div>
+    </div>
 
-    </nav>
+    <!-- การ์ดรูปเดียว -->
+    <div class="certi-card">
+      <div class="certi-images">
+        <img src="images/certificate/BSJ.png" alt="เด็กดีศรี จอ." />
+      </div>
+      <div class="certi-text">
+        <p><strong>ปีการศึกษา:</strong> พ.ศ.2558</p>
+        <p><strong>ชื่อเกียรติบัตร:</strong> เด็กดีศรี จอ. ประจำเดือนมิถุนายน</p>
+        <p><strong>วันที่:</strong> 30 มิถุนายน 2558</p>
+      </div>
+    </div>
 
-    <section class="certi-section">
-        <h1>เกียรติบัตร</h1>
+  </section>
 
-        <div class="certi-card">
-
-            <img src="images/certificate/BSJ.png" alt="เด็กดีศรี จอ.">
-
-            <div class="certi-text">
-                <p><strong>ปีการศึกษา : </strong> พ.ศ.2558</p>
-                <p><strong>ชื่อเกียรติบัตร : </strong> เด็กดีศรี จอ. ประจำเดือนมิถุนายน</p>
-                <p><strong>วันที่ : </strong> 30 มิถุนายน 2558</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
+  <script src="lightbox.js"></script>
 </body>
 
 <footer>
-    <p>&copy; 2568 แฟ้มสะสมผลงาน นายภูวณัฐ พาหะละ</p>
+  <p>&copy; 2568 แฟ้มสะสมผลงาน นายภูวณัฐ พาหะละ</p>
 </footer>
 
 </html>
