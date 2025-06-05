@@ -1,0 +1,125 @@
+/* ===== พื้นหลังไล่สีสองสี ===== */
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to bottom, #b2f7b2, #20c997);
+    min-height: 200vh;
+}
+
+/* ===== เมนู Toggle ===== */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+/* ===== ส่วนแสดงเกียรติบัตร ===== */
+.certi-section {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certi-section h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ===== การ์ดเกียรติบัตร ===== */
+.certi-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 15px;
+}
+
+/* ===== รูปเรียงแนวตั้ง ===== */
+.certi-image {
+    width: 150px;
+    height: 100px;
+    overflow-y: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.certi-images {
+    width: 150px;
+    height: 210px;
+    /* ✅ เพิ่มความสูง */
+    overflow-y: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.certi-image img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.certi-images img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ===== ข้อความเกียรติบัตร ===== */
+.certi-text {
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+/* ===== Responsive (มือถือ) ===== */
+@media screen and (max-width: 650px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .certi-section {
+        padding: 10px;
+    }
+
+    .certi-images img {
+        width: 120px;
+        height: 100px;
+        margin: 5px;
+    }
+
+    .certi-image img {
+        width: 120px;
+        height: 100px;
+        margin: 5px;
+    }
+
+    .certi-text {
+        font-size: 0.95rem;
+    }
+}
