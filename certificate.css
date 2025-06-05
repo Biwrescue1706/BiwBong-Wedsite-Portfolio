@@ -20,14 +20,14 @@ body {
 
 /* ===== ส่วนแสดงเกียรติบัตร ===== */
 .certi-section {
-  margin: 15px;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .certi-section h1 {
@@ -53,6 +53,16 @@ body {
 }
 
 /* ===== รูปเรียงแนวตั้ง ===== */
+.certi-image {
+    width: 150px;
+    height: 100px;
+    overflow-y: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
 .certi-images {
     width: 150px;
     height: 210px;
@@ -62,6 +72,14 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+}
+
+.certi-image img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .certi-images img {
@@ -79,17 +97,8 @@ body {
     margin-left: 10px;
 }
 
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #46ffb8;
-    color: #000;
-    margin-top: 20px;
-}
-
 /* ===== Responsive (มือถือ) ===== */
-@media screen and (max-width: 150px) {
+@media screen and (max-width: 650px) {
     .menu-toggle {
         display: block;
     }
@@ -99,6 +108,12 @@ footer {
     }
 
     .certi-images img {
+        width: 120px;
+        height: 100px;
+        margin: 5px;
+    }
+
+    .certi-image img {
         width: 120px;
         height: 100px;
         margin: 5px;
