@@ -1,0 +1,108 @@
+/* ===== พื้นหลังไล่สีสองสี ===== */
+body {
+    margin: 100px;
+    padding: 100px;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to bottom, #b2f7b2, #20c997);
+    min-height: 200vh;
+}
+
+/* ===== เมนูนำทาง (Responsive toggle ควรอยู่ใน script.js) ===== */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ===== ส่วนแสดงเกียรติบัตร ===== */
+.certi-section {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.certi-section h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* ===== การ์ดเกียรติบัตร ===== */
+.certi-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.certi-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.certi-text {
+    flex: 1;
+}
+
+.certi-card h2 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #222;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #46ffb8;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* ===== Responsive (มือถือ) ===== */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .certi-card {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .certi-card img {
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .certi-text {
+        text-align: left;
+    }
+
+    .certi-card h2 {
+        font-size: 0.95rem;
+    }
+
+    .certi-section {
+        padding: 10px;
+    }
+}
