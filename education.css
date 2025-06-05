@@ -60,15 +60,6 @@ body {
     color: #222;
 }
 
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #46ffb8;
-    color: #000;
-    margin-top: 20px;
-}
-
 /* ===== Responsive (มือถือ) ===== */
 @media screen and (max-width: 768px) {
     .menu-toggle {
@@ -81,9 +72,9 @@ footer {
     }
 
     .edu-card img {
-        width: 75px;
-        height: 75px;
-        margin: 5px;
+        width: 120px;
+        height: 100px;
+        margin: 2px;
     }
 
     .edu-text {
@@ -92,10 +83,10 @@ footer {
     }
 
     .edu-card h2 {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .edu-section {
-        padding: 10px;
+        padding: 5px;
     }
 }
