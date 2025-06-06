@@ -50,7 +50,7 @@ nav ul li a {
     right: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     .menu-toggle {
         display: block; /* โผล่บนจอเล็ก (มือถือ) */
     }
