@@ -159,7 +159,7 @@ footer {
 }
 
 /* ===== Responsive (มือถือ) ===== */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .skill-boxes {
     grid-template-columns: 1fr;
     /* เหลือ 1 คอลัมน์ในมือถือ */
