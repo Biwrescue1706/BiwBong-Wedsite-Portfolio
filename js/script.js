@@ -3,4 +3,9 @@ const navList = document.getElementById("nav-list");
 
 menuToggle.addEventListener("click", () => {
   navList.classList.toggle("show");
+  if (navList.classList.contains("show")) {
+    menuToggle.textContent = "✖";
+  } else {
+    menuToggle.textContent = "☰";
+  }
 });
