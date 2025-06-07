@@ -13,7 +13,7 @@ body {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  max-width: 650px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,7 +68,7 @@ personal-record p {
 /* ===== Skill Boxes (3 คอลัมน์) ===== */
 .skill-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
