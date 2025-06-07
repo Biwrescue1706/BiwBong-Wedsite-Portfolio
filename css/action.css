@@ -1,0 +1,88 @@
+/* style.css */
+
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e6f7e6, #b2f7b2);
+}
+
+/* ===== Section ===== */
+.download-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-section h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0b5e2b;
+  margin-bottom: 30px;
+}
+
+/* ===== Download Card ===== */
+.download-container {
+  display: flex;
+  justify-content: center;
+}
+
+.download-card {
+  background-color: #f4fff4;
+  padding: 20px;
+  border: 2px solid #0b993b;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.download-card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ee840a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #08732c;
+}
+
+@media screen and (max-width: 600px) {
+  .download-section {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .download-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .download-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .download-btn {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+}
+
