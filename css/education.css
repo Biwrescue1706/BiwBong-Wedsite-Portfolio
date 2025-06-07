@@ -7,24 +7,13 @@ body {
     min-height: 200vh;
 }
 
-/* ===== เมนูนำทาง (Responsive toggle ควรอยู่ใน script.js) ===== */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-}
-
 /* ===== ส่วนการศึกษา ===== */
 .edu-section {
   margin: 15px;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  max-width: 650px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,7 +39,7 @@ body {
     text-align: left;
     margin-bottom: 20px;
     margin: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .edu-card img {
@@ -84,14 +73,14 @@ body {
     }
 
     .edu-card img {
-        width: 120px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         margin: 2px;
     }
 
     .edu-text {
         text-align: left;
-        padding: 5px;
+        padding: 4px;
     }
 
     .edu-card h2 {

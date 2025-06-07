@@ -11,15 +11,12 @@ nav {
   background-color: rgba(12, 91, 40, 0.7);
   padding: 35px 0;
   text-align: center;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 20px;
 }
 
 nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  /* ตารางอัตโนมัติ */
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
@@ -29,20 +26,27 @@ nav ul {
 
 nav ul li {
   text-align: center;
-  border: 2px solid #000;
-  /* ✅ กรอบดำ */
-  border-radius: 8px;
   font-size: 20px;
-  margin: 20px;
-  padding: 20px;
+  margin: 20px auto;
   transition: background-color 0.3s ease;
 }
 
 nav ul li a {
+  display: block;
+  padding: 25px;
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-toggle {
@@ -58,7 +62,6 @@ nav ul li a {
 @media screen and (max-width: 750px) {
   .menu-toggle {
     display: block;
-    /* โผล่บนจอเล็ก (มือถือ) */
   }
 
   #nav-list {
