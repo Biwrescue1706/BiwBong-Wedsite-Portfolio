@@ -1,9 +1,8 @@
 // lightbox.js
 
 document.addEventListener('DOMContentLoaded', () => {
-  const images = document.querySelectorAll('.certi-images img');
-  const image = document.querySelectorAll('.certi-image img');
-  
+  const images = document.querySelectorAll('.certi-images img , .port-images img');
+  const image = document.querySelectorAll('.certi-image img, .port-image img');
   image.forEach(img => {
     img.addEventListener('click', () => {
       const lightbox = document.createElement('div');
