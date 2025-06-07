@@ -56,7 +56,7 @@ nav ul li a:hover {
   cursor: pointer;
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 50px;
 }
 
 @media screen and (max-width: 750px) {
@@ -82,9 +82,9 @@ nav ul li a:hover {
     background-color: rgba(12, 91, 40, 0.9);
     position: absolute;
     top: 25px;
-    left: 0;
-    right: 0;
-    width: 50%;
+    left: auto;
+    right: auto;
+    width: 60%;
   }
 
   nav ul.show {
@@ -93,7 +93,7 @@ nav ul li a:hover {
 
   nav ul li {
     margin: 20px 0;
-    width: 50%;
+    width: 60%;
   }
 }
 

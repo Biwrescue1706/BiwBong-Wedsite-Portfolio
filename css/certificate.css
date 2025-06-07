@@ -7,15 +7,56 @@ body {
     min-height: 200vh;
 }
 
-/* ===== เมนู Toggle ===== */
 .menu-toggle {
     display: none;
-    font-size: 28px;
+    font-size: 30px;
     color: white;
     cursor: pointer;
     position: absolute;
-    top: 25px;
-    right: 30px;
+    top: 30px;
+    right: 50px;
+}
+
+nav {
+    background-color: rgba(12, 91, 40, 0.7);
+    padding: 35px 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 10;
+    padding: 10;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ===== ส่วนแสดงเกียรติบัตร ===== */
@@ -108,14 +149,14 @@ body {
     }
 
     .certi-images img {
-        width: 120px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         margin: 5px;
     }
 
     .certi-image img {
-        width: 120px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         margin: 5px;
     }
 
