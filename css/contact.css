@@ -6,92 +6,73 @@ body {
   min-height: 200vh;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 20px;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-header {
-  background: #67e7fd;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-header h1,
-header p {
-  color: #000;
-}
-
-header img.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-h2 {
-  margin-top: 20px;
-  color: #000000;
-}
-
+/* ===== ติดต่อ ===== */
 section {
-  margin: 20px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 0 10px #0000001a;
+  font-family: 'Kanit', sans-serif;
+  text-align: left;
 }
 
 section h1 {
-  margin-top: 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000000;
+  margin-bottom: 20px;
 }
 
-.about {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  line-height: 1.6;
-  background-color: #1dff7b;
-  border-radius: 10px;
-}
-
-.about h1 {
-  text-align: center;
-  color: #007acc;
-}
-
-.about p {
-  font-size: 1rem;
-}
-
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background: #46ffb8;
+section h2 {
+  font-size: 1.2rem;
   color: #000000;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+section img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+section a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+  
+  .menu-toggle {
+    display: block;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section img {
+    width: 30px;
+    height: 30px;
+  }
+
+  section a {
+    font-size: 1.5rem;
+  }
 }
