@@ -1,0 +1,54 @@
+/* ===== กิจกรรมยามว่าง ===== */
+.hobby-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffffcc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hobby-section h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.hobby-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.hobby-card {
+    background-color: #eaffea;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.hobby-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@media screen and (max-width: 750px) {
+    .hobby-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hobby-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-card p {
+        font-size: 1rem;
+    }
+
+    .hobby-card img {
+        height: 120px;
+    }
+}
