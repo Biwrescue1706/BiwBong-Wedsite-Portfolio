@@ -55,12 +55,11 @@
 - ปุ่มดาวน์โหลดเอกสารหรือผลงาน
 
 
-🙋‍♂️ ผู้พัฒนา <pre>
-ชื่อ: ภูวณัฐ พาหะละ (Phuwanat Phahala)
+## ผู้พัฒนา
+-ชื่อ : ภูวณัฐ พาหะละ (Phuwanat Phahala)
 
-LINE: phuwanatza7
+-LINE : phuwanatza7
 
-Email: bewrockgame1@gmail.com
-Email: bewrockgame3@gmail.com
-Email: 66110045@dpu.ac.th
-</pre>
+-Email : bewrockgame1@gmail.com
+-Email : bewrockgame3@gmail.com
+-Email : 66110045@dpu.ac.th
