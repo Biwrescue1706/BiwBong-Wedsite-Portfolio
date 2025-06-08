@@ -95,7 +95,7 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .download-section {
     margin: 20px;
     padding: 15px;
