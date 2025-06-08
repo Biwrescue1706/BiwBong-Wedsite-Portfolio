@@ -54,14 +54,8 @@
 - การจัดหน้าแบบ Grid และ Card Layout
 - ปุ่มดาวน์โหลดเอกสารหรือผลงาน
 
-## 🚀 วิธีการเริ่มต้น
 
-1. ดาวน์โหลด ZIP หรือ clone โปรเจกต์:
-   git clone https://github.com/Biwrescue1706/Portfolio.git
-
-2. เปิดไฟล์ index.html ด้วยเบราว์เซอร์
-
-🙋‍♂️ ผู้พัฒนา
+🙋‍♂️ ผู้พัฒนา <pre>
 ชื่อ: ภูวณัฐ พาหะละ (Phuwanat Phahala)
 
 LINE: phuwanatza7
@@ -69,3 +63,4 @@ LINE: phuwanatza7
 Email: bewrockgame1@gmail.com
 Email: bewrockgame3@gmail.com
 Email: 66110045@dpu.ac.th
+</pre>
