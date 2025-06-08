@@ -1,11 +1,3 @@
-body {
-  margin: 10px;
-  padding: 10px;
-  font-family: sans-serif;
-  background: linear-gradient(to bottom, #b2f7b2, #20c997);
-  min-height: 200vh;
-}
-
 /* ===== ติดต่อ ===== */
 section {
     margin: 15px;
