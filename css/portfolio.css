@@ -39,6 +39,11 @@ body {
     margin-bottom: 20px;
     width: auto;
     padding: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* ===== รูปเรียงแนวตั้ง ===== */
