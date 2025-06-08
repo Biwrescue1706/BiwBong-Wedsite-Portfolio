@@ -127,29 +127,10 @@ personal-record p {
   text-align: center;
 }
 
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background: #46ffb8;
-  color: #000000;
-  margin-top: 20px;
-}
-
 /* ===== Responsive (มือถือ) ===== */
 @media screen and (max-width: 750px) {
   .skill-boxes {
     grid-template-columns: 1fr;
-    /* เหลือ 1 คอลัมน์ในมือถือ */
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
   }
 
   section {
