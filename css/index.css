@@ -1,12 +1,3 @@
-/* ===== พื้นหลังไล่สีสองสี ===== */
-body {
-  margin: 100px;
-  padding: 100px;
-  font-family: 'Kanit', sans-serif;
-  background: linear-gradient(to bottom, #b2f7b2, #20c997);
-  min-height: 200vh;
-}
-
 /* ===== Section ===== */
 .about {
   margin: 15px;
