@@ -11,12 +11,12 @@ body {
 .edu-section {
   margin: 15px;
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   border-radius: 12px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #000000;
 }
 
 .edu-section h1 {
@@ -33,7 +33,7 @@ body {
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px #000000;
     transition: transform 0.2s ease;
     gap: 20px;
     text-align: left;
