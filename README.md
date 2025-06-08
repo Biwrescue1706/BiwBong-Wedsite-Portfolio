@@ -23,7 +23,7 @@
 | `action.html` | ดาวน์โหลดเอกสาร |
 
 ## 📁 โครงสร้างไฟล์
-<pre> ```Portfolio/
+<pre> Portfolio/
 ├── css/
 │ ├── action.css
 │ └── certificate.css
@@ -45,7 +45,7 @@
 ├── portfolio.html
 ├── README.md
 └──work.html
-
+ </pre>
 
 ## ✅ ฟีเจอร์เด่น
 
