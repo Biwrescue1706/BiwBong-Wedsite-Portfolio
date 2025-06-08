@@ -66,7 +66,7 @@ body {
 /* ===== แกลเลอรีภาพแบบ 5 คอลัมน์ ===== */
 .port-images {
     display: grid;
-    grid-template-columns: repeat(10, 2fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 10px;
     justify-items: center;
     padding: 10px 0;
@@ -77,7 +77,7 @@ body {
     max-width: 140px;
     height: 100px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -148,12 +148,12 @@ body {
     }
 
     .port-images {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .port-images img {
         max-width: 100px;
-        height: 75px;
+        height: 100px;
     }
 
     .port-text {
