@@ -8,16 +8,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== About ===== */
+/* ===== รูปโปรไฟล์ ===== */
 .about img {
   display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 10%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #007acc;
   margin: 0 auto 20px auto;
 }
 
+/* ===== หัวเรื่อง ===== */
 .about h1 {
   text-align: center;
   color: #000000;
@@ -31,6 +33,7 @@
   font-size: 1.5rem;
 }
 
+/* ===== ข้อมูลส่วนตัว ===== */
 .about p {
   text-align: left;
   font-size: 2rem;
@@ -44,6 +47,7 @@ personal-record p {
   font-size: 2.5rem;
 }
 
+/* ===== ลิงก์ ===== */
 .about a {
   color: #000000;
   text-decoration: none;
@@ -54,7 +58,7 @@ personal-record p {
   text-decoration: underline;
 }
 
-/* ===== Skill Boxes (3 คอลัมน์) ===== */
+/* ===== กล่องทักษะ (แสดงเป็น 3 คอลัมน์) ===== */
 .skill-boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -63,7 +67,7 @@ personal-record p {
   margin-bottom: 20px;
 }
 
-/* Skill แต่ละแถว */
+/* กล่องแต่ละทักษะ */
 .skill-row {
   background: #ffffffcc;
   margin: 12px;
