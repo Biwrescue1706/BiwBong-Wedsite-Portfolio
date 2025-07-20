@@ -3,13 +3,6 @@
 - เว็บไซต์แฟ้มสะสมผลงานส่วนตัว
 - ประกอบด้วยข้อมูลส่วนตัว การศึกษา ผลงาน เกียรติบัตร และอื่นๆ
 
-## 🛠️ เทคโนโลยีที่ใช้
-
-- HTML5
-- CSS3 (รองรับ responsive และพื้นหลังไล่สี)
-- JavaScript (สำหรับเมนูมือถือ)
-- ฟอนต์ Kanit จาก Google Fonts
-
 ## 📄 โครงสร้างหน้าเว็บไซต์
 
 | หน้า | รายละเอียด |
@@ -22,39 +15,6 @@
 | `work.html` | ประวัติการทำงาน |
 | `contact.html` | ติดต่อฉัน |
 | `action.html` | ดาวน์โหลดเอกสาร |
-
-## 📁 โครงสร้างไฟล์
-<pre> Portfolio/
-├── css/
-│ ├── action.css
-│ └── certificate.css
-│ ├── contact.css
-│ ├── education.css
-│ └── hobbies.css
-│ ├── index.css
-│ └── portfolio.css
-│ ├── style.css
-│ └── work.css
-├── images/
-│ └── (รูปภาพทั้งหมด)
-├── action.html
-├── certificate.html
-├── contact.html
-├── education.html
-├── hobbies.html
-├── index.html
-├── portfolio.html
-├── README.md
-└──work.html
- </pre>
-
-## ✅ ฟีเจอร์เด่น
-
-- เมนูนำทางแบบ Responsive
-- ดีไซน์เรียบง่าย ใช้โทนสีเขียวสบายตา
-- การจัดหน้าแบบ Grid และ Card Layout
-- ปุ่มดาวน์โหลดเอกสารหรือผลงาน
-
 
 ## ผู้พัฒนา
 - ชื่อ : ภูวณัฐ พาหะละ (Phuwanat Phahala)
