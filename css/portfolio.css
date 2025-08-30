@@ -4,7 +4,7 @@
     padding: 15px;
     background-color: #ffffff;
     border-radius: 12px;
-    max-width: 1800px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -128,31 +128,111 @@
     gap: 10px;
 }
 
-/* ===== Responsive (มือถือ) ===== */
-@media screen and (max-width: 750px) {
-    .menu-toggle {
-        display: block;
-    }
-
+/* 481px–768px: มือถือแนวนอน / แท็บเล็ตเล็ก */
+@media (min-width: 481px) and (max-width: 768px) {
     .port-section {
-        padding: 10px;
+        padding: 20px;
+        max-width: 1200px;
+        width: 90%;
     }
 
+    .port-section h1 {
+        font-size: 2.1rem;
+    }
+
+    .port-section p {
+        font-size: 1.2rem;
+    }
+
+    /* แกลเลอรี ~3–4 คอลัมน์ */
     .port-images {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
     }
 
     .port-images img {
-        max-width: 100px;
-        height: 100px;
+        max-width: 160px;
+        height: 110px;
     }
 
-    .port-text {
-        font-size: 0.95rem;
+    /* การ์ดให้กว้างเต็มพื้นที่มากขึ้น */
+    .port-card,
+    .port-cards {
+        max-width: 100%;
+        padding: 16px;
+        gap: 16px;
     }
 
-    .download-btn,
-    .download-btn2 {
-        font-size: 0.95rem;
+    .port-btns {
+        flex-wrap: wrap;
+    }
+}
+
+/* 769px–1279px: แท็บเล็ตใหญ่ / แล็ปท็อปเล็ก */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .port-section {
+        padding: 20px;
+        max-width: 1200px;
+        width: 90%;
+    }
+
+    .port-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .port-section p {
+        font-size: 1.3rem;
+    }
+
+    /* แกลเลอรี ~4–6 คอลัมน์ */
+    .port-images {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 14px;
+    }
+
+    .port-images img {
+        max-width: 180px;
+        height: 120px;
+    }
+
+    .port-card,
+    .port-cards {
+        max-width: 100%;
+        padding: 18px;
+        gap: 18px;
+    }
+}
+
+/* ≥1280px: เดสก์ท็อป */
+@media (min-width: 1280px) {
+    .port-section {
+        padding: 24px;
+    }
+
+    .port-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .port-section p {
+        font-size: 1.35rem;
+    }
+
+    /* แกลเลอรี ~6–8+ คอลัมน์ (ยืดหยุ่นตามความกว้าง) */
+    .port-images {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+    }
+
+    .port-images img {
+        max-width: 200px;
+        height: 130px;
+    }
+
+    .port-card,
+    .port-cards {
+        max-width: 1100px;
+        /* โชว์คอนเทนต์กว้างขึ้นบนเดสก์ท็อป */
+        padding: 20px;
+        gap: 20px;
     }
 }

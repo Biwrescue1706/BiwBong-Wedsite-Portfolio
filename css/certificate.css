@@ -1,10 +1,10 @@
 /* ===== ส่วนแสดงเกียรติบัตร ===== */
 .certi-section {
-    margin: 15px;
+    margin: 15px auto;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    max-width: 1800px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,6 @@
 .certi-images {
     width: 150px;
     height: 210px;
-    /* ✅ เพิ่มความสูง */
     overflow-y: 100px;
     display: flex;
     flex-direction: column;
@@ -77,29 +76,62 @@
     margin-left: 10px;
 }
 
-/* ===== Responsive (มือถือ) ===== */
-@media screen and (max-width: 750px) {
-    .menu-toggle {
-        display: block;
-    }
+/* ===== มือถือแนวนอน / Tablet เล็ก (481px - 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .certi-section {
+    max-width: 1200px;
+    width: 90%;
+    padding: 12px;
+  }
 
-    .certi-section {
-        padding: 10px;
-    }
+  .certi-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .certi-images img {
-        width: 75px;
-        height: 75px;
-        margin: 5px;
-    }
+  .certi-image img,
+  .certi-images img {
+    width: 100px;
+    height: 90px;
+    margin: 6px auto;
+  }
 
-    .certi-image img {
-        width: 75px;
-        height: 75px;
-        margin: 5px;
-    }
+  .certi-text {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+}
 
-    .certi-text {
-        font-size: 0.95rem;
-    }
+/* ===== Tablet ใหญ่ / Laptop เล็ก (769px - 1279px) ===== */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .certi-section {
+    max-width: 1200px;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .certi-card {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .certi-image img,
+  .certi-images img {
+    width: 130px;
+    height: 100px;
+  }
+
+  .certi-text {
+    font-size: 1.05rem;
+  }
+}
+
+/* ===== Desktop (≥1280px) ===== */
+@media (min-width: 1280px) {
+  .certi-section {
+    max-width: 1400px;
+    padding: 20px;
+  }
+
 }

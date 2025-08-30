@@ -1,13 +1,13 @@
 /* ===== ส่วนการศึกษา ===== */
 .edu-section {
-  margin: 15px;
-  padding: 15px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 8px #000000;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px #000000;
 }
 
 .edu-section h1 {
@@ -52,33 +52,68 @@
     color: #222;
 }
 
-/* ===== Responsive (มือถือ) ===== */
-@media screen and (max-width: 750px) {
-    .menu-toggle {
-        display: block;
+/* ===== มือถือแนวนอน / Tablet เล็ก (481px - 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .edu-section {
+        max-width: 1200px;
+        padding: 24px;
+        width: 90%;
+    }
+
+    .edu-section h1 {
+        font-size: 1.6rem;
     }
 
     .edu-card {
         flex-direction: row;
-        text-align: center;
+        gap: 15px;
+        padding: 10px;
     }
 
     .edu-card img {
-        width: 75px;
-        height: 75px;
-        margin: 2px;
-    }
-
-    .edu-text {
-        text-align: left;
-        padding: 4px;
+        width: 90px;
+        height: 90px;
     }
 
     .edu-card h2 {
         font-size: 1rem;
     }
+}
 
+/* ===== Tablet ใหญ่ / Laptop เล็ก (769px - 1279px) ===== */
+@media (min-width: 769px) and (max-width: 1279px) {
     .edu-section {
-        padding: 10px;
+        max-width: 1200px;
+        padding: 24px;
+        width: 90%;
+    }
+
+    .edu-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .edu-card {
+        flex-direction: row;
+        gap: 20px;
+        padding: 12px;
+    }
+
+    .edu-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .edu-card h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* ===== Desktop (≥1280px) ===== */
+@media (min-width: 1280px) {
+    .edu-section {
+        max-width: 1400px;
+        padding: 24px;
+        width: 100%;
     }
 }

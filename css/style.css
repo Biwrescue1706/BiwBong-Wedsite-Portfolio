@@ -1,122 +1,170 @@
-/* ===== พื้นหลังไล่สีสองสี ===== */
+/* ==================== Base ==================== */
+:root {
+  --bg-gradient: linear-gradient(to bottom, #b2f7b2, #20c997);
+
+  --nav-bg: #20c997;
+  --nav-fg: #ffffff;
+  --nav-hover: #2bff00;
+
+  --drawer-bg: #0b1220;
+  --drawer-fg: #ffffff;
+  --drawer-line: #1f2937;
+  --drawer-shadow: 0 16px 40px rgba(2, 6, 23, .32);
+}
+
 body {
-  margin: 10px;
-  padding: 10px;
+  margin: 0;
   font-family: 'Kanit', sans-serif;
-  background: linear-gradient(to bottom, #b2f7b2, #20c997);
-  min-height: 200vh;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  color: #111;
 }
 
-nav {
-  background-color: #20c997;
-  padding: 35px ;
-  text-align: center;
-  border-radius: 20px;
-  position: relative;
-  max-width: 1800px;
+/* ==================== Navbar ==================== */
+.navbar {
+  background: var(--nav-bg);
+  padding: 15px 20px;
+  border-radius: 16px;
+  margin: 10px auto;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--nav-fg);
 }
 
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  list-style: none;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-  max-width: 1800px;
+.navbar h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-nav ul li {
-  text-align: center;
-  font-size: 25px;
-  margin: 5px;
+/* ให้โลโก้ที่เป็น toggle คลิกได้ */
+#navToggle {
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  max-width: 1800px;
 }
 
-nav ul li a {
-  display: block;
-  padding: 25px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.99rem;
-  border: 2px solid #000;
-  border-radius: 8px;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: rgb(43, 255, 0);
-}
-
-/* ☰ ปุ่มแสดงเมนู */
-.menu-toggle {
-  display: none;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 10.5px;
-  right: 25px;
-  z-index: 10001;
-}
-
-/* ✖ ปุ่มปิดเมนู */
-.close-button {
+/* ==================== Drawer ==================== */
+.backdrop {
   position: fixed;
-  top: 10.5px;
-  right: 25px;
-  font-size: 30px;
-  color: white;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease;
+  z-index: 1200;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: min(86vw, 320px);
+  background: var(--drawer-bg);
+  color: var(--drawer-fg);
+  border-right: 1px solid var(--drawer-line);
+  box-shadow: var(--drawer-shadow);
+  transform: translateX(-104%);
+  transition: transform .3s ease;
+  z-index: 1300;
+  overflow-y: auto;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--drawer-line);
+}
+
+.drawer-title {
+  font-weight: 600;
+}
+
+.drawer .links {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+}
+
+.drawer .link {
+  display: block;
+  padding: 12px 14px;
+  color: var(--drawer-fg);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background .25s ease;
+}
+
+.drawer .link:hover {
+  background: rgba(255, 255, 255, .08);
+}
+
+.drawer .link.active {
+  background: rgba(255, 255, 255, .18);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--drawer-fg);
+  font-size: 22px;
   cursor: pointer;
-  z-index: 10001;
+}
+
+/* ล็อกสกรอลล์พื้นหลังเมื่อ Drawer เปิด */
+body.no-scroll {
+  overflow: hidden;
 }
 
 footer {
+  color: #ffffff;
+  align-items: center;
   text-align: center;
-  padding: 10px 0;
-  font-size: 25px;
-  background: #ffffff00;
-  color: #ffffffff;
-  margin-top: 20px;
 }
 
-/* ========== มือถือ ========== */
-@media screen and (max-width: 750px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: stretch; /* ✅ ให้ลิงก์ยืดเต็ม */
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #20c997;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 60vh;
-    overflow-y: auto;
-    padding-top: 60px;
-    z-index: 9999;
+/* แท็บเล็ตเล็ก */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    max-width: 1200px;
     width: 90%;
-    border-radius:30px;
   }
 
-  nav ul.show {
-    display: flex;
+  .navbar h1 {
+    font-size: 1.1rem;
   }
+}
 
-  nav ul li {
+/* แท็บเล็ตใหญ่ + Laptop */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .navbar {
+    max-width: 1200px;
     width: 90%;
-    margin: 15px 0;
   }
 
-  .menu-toggle {
-    display: block;
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .navbar {
+    max-width: 1400px;
+    width: 100%;
   }
 }

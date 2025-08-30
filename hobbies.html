@@ -6,15 +6,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>กิจกรรมยามว่าง</title>
+
+    <link rel="icon" type="image/png" href="/images/logo.png">
     <link rel="stylesheet" href="css/hobbies.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/nav.js"></script>
 
 </head>
 
 <body>
 
-    <div id="nav-container"></div>
+    <!-- ===== Navbar (Logo = Toggle) ===== -->
+    <nav class="navbar">
+        <h1>
+            <img src="/images/logo.png" height="40" alt="logo" id="navToggle" role="button" tabindex="0"
+                aria-controls="navDrawer" aria-expanded="false">
+            กิจกรรมยามว่าง
+        </h1>
+
+        <!-- Drawer -->
+        <div class="inner drawer" id="navDrawer" aria-hidden="true">
+            <div class="drawer-header">
+                <span class="drawer-title">
+                    <img src="/images/logo.png" alt="หน้าแรก" height="32" style="vertical-align:middle">
+                    &nbsp;เมนู
+                </span>
+                <button id="drawerClose" class="icon-btn" aria-label="ปิดเมนู">✕</button>
+            </div>
+
+            <div class="links">
+                <a href="/" class="link ">ประวัติส่วนตัว </a>
+                <a href="/education" class="link ">การศึกษา</a>
+                <a href="/certificate" class="link ">เกียรติบัตร</a>
+                <a href="/hobbies" class="link active">กิจกรรมยามว่าง</a>
+                <a href="/portfolio" class="link">ผลงาน</a>
+                <a href="/work" class="link">ประวัติการทำงาน</a>
+                <a href="/contact" class="link">ติดต่อฉัน</a>
+                <a href="/action" class="link">ดาวน์โหลด</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Backdrop -->
+    <div id="backdrop" class="backdrop" hidden></div>
 
     <section class="hobby-section">
         <h1>กิจกรรมยามว่าง</h1>
@@ -31,6 +64,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/nav.js"></script>
 
 </body>
 

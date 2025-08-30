@@ -1,13 +1,10 @@
-
-/* ===== Section ===== */
+/* ==================== Section ==================== */
 .download-section {
-  margin: 15px;
-  padding: 15px;
+  margin: 20px auto;
+  padding: 20px;
   background-color: #ffffff;
   border-radius: 12px;
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,47 +15,61 @@
   margin-bottom: 30px;
 }
 
-/* ===== Download Card ===== */
+/* ==================== Container ==================== */
 .download-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  max-width: 1400px;
+  margin: 0px auto;
 }
 
+/* ==================== Card ==================== */
 .download-card {
+  width: 100%;
+  min-height: 200px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 12px;
-  box-shadow: 0 4px 10px #000000;
-  gap: 15px;
-  text-align: center;
-  margin-bottom: 20px;
-  width: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 .download-card p {
   font-size: 1.1rem;
-  margin-bottom: 20px;
-  text-align: center;
+  margin: 0 0 20px 0;
   color: #000000;
 }
 
-.download-btn {
+/* ==================== ปุ่มดาวน์โหลด ==================== */
+.download-btn,
+.download-btn2 {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #c80000;
-  color: white;
-  text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
   transition: background-color 0.2s ease;
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.download-btn {
+  background-color: #c80000;
 }
 
 .download-btn:hover {
@@ -66,58 +77,53 @@
 }
 
 .download-btn2 {
-  display: inline-block;
-  padding: 12px 20px;
   background-color: #0392ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
-  margin: 10px;
 }
 
 .download-btn2:hover {
   background-color: #0392ffa6;
 }
 
-.download-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* ==================== Responsive ==================== */
+/* มือถือเล็ก: 1 คอลัมน์ */
+@media (max-width: 480px) {
+  .download-container {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media screen and (max-width: 750px) {
+/* มือถือแนวนอน/แท็บเล็ตเล็ก: 2 คอลัมน์ */
+@media (min-width: 481px) and (max-width: 768px) {
   .download-section {
-    margin: 20px;
-    padding: 15px;
+    max-width: 1200px;
+    width: 90%;
   }
 
   .download-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .download-card {
+    max-width: 1200px;
+    grid-template-columns: 1fr;
     width: 90%;
-    max-width: 90%;
-    padding: 15px;
+  }
+}
+
+/* แท็บเล็ตใหญ่/แล็ปท็อป: 2 คอลัมน์ */
+@media (min-width: 769px) and (max-width: 1279px) {
+
+  .download-section {
+    max-width: 1200px;
+    width: 90%;
   }
 
-  .download-section h1 {
-    font-size: 1.8rem;
+  .download-container {
+    max-width: 1200px;
+    grid-template-columns: 1fr;
+    width: 90%;
   }
+}
 
-  .download-btn,
-  .download-btn2 {
-    font-size: 0.95rem;
+/* เดสก์ท็อป: 3 คอลัมน์ */
+@media (min-width: 1280px) {
+  .download-container {
+    grid-template-columns: repeat(3, 1fr);
   }
-
-  .download-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
 }

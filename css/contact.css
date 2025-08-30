@@ -1,13 +1,13 @@
 /* ===== ติดต่อ ===== */
 section {
-    margin: 15px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h1 {
@@ -38,34 +38,57 @@ section a {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 750px) {
-  
-  .menu-toggle {
-    display: block;
-  }
-
+/* 481px – 768px : มือถือแนวนอน / แท็บเล็ตเล็ก */
+@media (min-width: 481px) and (max-width: 768px) {
   section {
-    margin: 10px 5px;
-    padding: 2px;
+    padding: 18px;
+    max-width: 1200px;
+    width: 90%;
   }
 
   section h1 {
     font-size: 2rem;
+    margin-bottom: 18px;
   }
 
   section h2 {
-    font-size: 1rem;
-    flex-direction: column;
-    align-items: start;
+    font-size: 1.1rem;
+    gap: 8px;
   }
 
   section img {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* 769px – 1279px : แท็บเล็ตใหญ่ / แล็ปท็อปเล็ก */
+@media (min-width: 769px) and (max-width: 1279px) {
+  section {
+    padding: 22px;
+    max-width: 1200px;
+    width: 90%;
   }
 
-  section a {
-    font-size: 1rem;
+  section h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 1.15rem;
+    gap: 10px;
+  }
+
+  section img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* ≥1280px : เดสก์ท็อป */
+@media (min-width: 1280px) {
+  section {
+    padding: 28px;
+    max-width: 1400px;
   }
 }

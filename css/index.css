@@ -1,10 +1,10 @@
 /* ===== Section ===== */
 .about {
-  margin: 15px;
+  margin: 15px auto;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  max-width: 1800px;
+  max-width: 1400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,32 +121,67 @@ personal-record p {
 }
 
 /* ===== Responsive (มือถือ) ===== */
-@media screen and (max-width: 750px) {
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .about {
+    max-width: 1200px;
+    width: 90%;
+  }
+
   .skill-boxes {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  section {
-    padding: 10px;
-  }
-
-  .about p {
-    font-size: 0.95rem;
+  .about img {
+    width: 120px;
+    height: 120px;
   }
 
   .about h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .about h2 {
     font-size: 1.2rem;
   }
 
-  .skill-name {
+  .about p {
     font-size: 1rem;
   }
+}
 
-  .percent {
-    font-size: 1rem;
+@media (min-width: 769px) and (max-width: 1279px) {
+  .about {
+    max-width: 1200px;
+    width: 90%;
+  }
+
+  .skill-boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .about h1 {
+    font-size: 2.2rem;
+  }
+
+  .about h2 {
+    font-size: 1.4rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about {
+    max-width: 1400px;
+    width: 100%;
   }
 }

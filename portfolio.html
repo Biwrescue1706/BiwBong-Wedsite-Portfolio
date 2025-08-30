@@ -5,16 +5,50 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Portfolio</title>
+
+  <link rel="icon" type="image/png" href="/images/logo.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/portfolio.css" />
-  <script src="js/nav.js"></script>
 
 </head>
 
 <body>
 
-  <div id="nav-container"></div>
+  <!-- ===== Navbar (Logo = Toggle) ===== -->
+  <nav class="navbar">
+    <h1>
+      <img src="/images/logo.png" height="40" alt="logo" id="navToggle" role="button" tabindex="0"
+        aria-controls="navDrawer" aria-expanded="false">
+      Portfolio
+    </h1>
+
+    <!-- Drawer -->
+    <div class="inner drawer" id="navDrawer" aria-hidden="true">
+      <div class="drawer-header">
+        <span class="drawer-title">
+          <img src="/images/logo.png" alt="หน้าแรก" height="32" style="vertical-align:middle">
+          &nbsp;เมนู
+        </span>
+        <button id="drawerClose" class="icon-btn" aria-label="ปิดเมนู">✕</button>
+      </div>
+
+      <div class="links">
+        <a href="/" class="link ">ประวัติส่วนตัว </a>
+        <a href="/education" class="link ">การศึกษา</a>
+        <a href="/certificate" class="link ">เกียรติบัตร</a>
+        <a href="/hobbies" class="link ">กิจกรรมยามว่าง</a>
+        <a href="/portfolio" class="link active">ผลงาน</a>
+        <a href="/work" class="link">ประวัติการทำงาน</a>
+        <a href="/contact" class="link">ติดต่อฉัน</a>
+        <a href="/action" class="link">ดาวน์โหลด</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Backdrop -->
+  <div id="backdrop" class="backdrop" hidden></div>
 
   <section class="port-section">
 
@@ -36,8 +70,7 @@
           <p><strong>เว็บไซต์ : </strong> เว็บไซต์แสดงผลงาน </p>
           <p><strong>ใช้ภาษา : </strong> HTML JavaScript CSS</p>
           <div class="port-btns">
-            <a href="https://portfolio-qruc.onrender.com" class="download-btn" 
-            target="_blank"> เข้าเว็บไซต์
+            <a href="https://portfolio-qruc.onrender.com" class="download-btn" target="_blank"> เข้าเว็บไซต์
             </a>
           </div>
 
@@ -171,6 +204,7 @@
 
 
   <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
 
 </body>
 
